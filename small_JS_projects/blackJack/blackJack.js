@@ -15,10 +15,10 @@ let gameStarted = false,
     gameOver = false,
     playerWon = false,
     dealerCards=[];
-playerCards=[];
-dealerScore = 0;
-playerScore = 0;
-deck = [];
+var playerCards=[];
+var dealerScore = 0;
+var playerScore = 0;
+
 
 
 hitButton.style.display = "none";
@@ -206,7 +206,7 @@ function showStatus()
     textArea.innerText = 'Welcome to BlackJack!';
     return;
 }
-document.getElementById("dealers").innerHTML= <img src="cards/card" +'('+dealerCards[0]
+
     let dealerCardString = '';
     for(let i=0; i < dealerCards.length; i++)
     {
@@ -249,7 +249,7 @@ document.getElementById("dealers").innerHTML= <img src="cards/card" +'('+dealerC
 
 }
 
-function getNextCard(deck)
+function getNextCard()
 {
 
     return deck.shift();
